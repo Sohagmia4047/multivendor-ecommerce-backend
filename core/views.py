@@ -602,7 +602,7 @@ class CheckoutView(APIView):
             # ======================
             # SSL PAYLOAD
             # ======================
-            backend_base = settings.BACKEND_BASE_URL
+            backend_base = settings.VITE_BASE_URL
 
             payload = {
                 "store_id": settings.SSLCOMMERZ_STORE_ID,
