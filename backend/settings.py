@@ -75,8 +75,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'backend.wsgi.application'
-BACKEND_BASE_URL = os.environ.get("BACKEND_BASE_URL")
-FRONTEND_BASE_URL = os.environ.get("FRONTEND_BASE_URL")
+BACKEND_BASE_URL = os.environ.get("VITE_API_BASE_URL")
+FRONTEND_BASE_URL = "http://localhost:5173"
 
 
 # Database
