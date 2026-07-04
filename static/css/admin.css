@@ -1,0 +1,58 @@
+/* FORM WIDTH */
+.form-horizontal .control-label {
+    width: 220px !important;
+    text-align: left !important;
+}
+
+/* INPUT WIDTH */
+.select2-container,
+textarea,
+input,
+.form-control {
+    width: 100% !important;
+}
+
+/* FORM GROUP */
+.form-group {
+    margin-bottom: 20px !important;
+}
+
+/* LABEL FIX */
+.col-sm-2 {
+    max-width: 220px !important;
+    flex: 0 0 220px !important;
+}
+
+/* INPUT AREA */
+.col-sm-10 {
+    max-width: calc(100% - 220px) !important;
+    flex: 0 0 calc(100% - 220px) !important;
+}
+
+/* IMAGE INLINE */
+.field-product_image img,
+.field-category_image img,
+.field-vendor_image img {
+    border-radius: 10px;
+}
+
+/* TAB FIX */
+.nav-tabs .nav-link {
+    font-size: 18px;
+    padding: 12px 20px;
+}
+
+/* SAVE BUTTON */
+.submit-row input {
+    padding: 10px 20px !important;
+    border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .col-sm-2,
+    .col-sm-10 {
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+    }
+}
