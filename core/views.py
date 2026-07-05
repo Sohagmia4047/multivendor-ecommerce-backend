@@ -377,6 +377,7 @@ class SSLCommerzSuccessView(APIView):
             payment.store_amount = validation.get("store_amount")
             payment.gateway_response = validation
             payment.paid_at = timezone.now()
+            print("Payment validated and completed for tran_id:", payment.tran_id)
 
             payment.save()
 
