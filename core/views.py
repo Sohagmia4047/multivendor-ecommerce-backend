@@ -386,6 +386,8 @@ class SSLCommerzSuccessView(APIView):
             ).first()
 
             if order:
+                print("FRONTEND_BASE_URL:", frontend_base)
+                print("Redirect URL:", f"{frontend_base}/payment-success?invoice={order.invoice_no}")
                 order.paid_status = True
                 order.product_status = "processing"
                 order.save()
